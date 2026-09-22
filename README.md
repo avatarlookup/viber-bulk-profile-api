@@ -20,18 +20,18 @@ This is the official AvatarLookup example repository for **one** bulk product, `
 
 | Column | Example | Meaning |
 |---|---|---|
-| `number` | `17253100591` |  |
-| `activated` | `yes` |  |
-| `mid` | `XxnrQwyLKXk=` |  |
-| `nickname` | `Alex` |  |
-| `last_online_time` | `2026-08-10 18:44:32` |  |
-| `active_days` | `0` |  |
-| `avatar` | `https://viber.waavatar.xyz/v/example.jpg` |  |
-| `avatar_type` | `Single Person` |  |
-| `person_count` | `1` |  |
-| `gender` | `Male` |  |
-| `age` | `37` |  |
-| `skin_color` | `white` |  |
+| `number` | `17253100591` | The submitted number, exactly as it appeared in your file. |
+| `activated` | `yes` | Whether the number is registered on Viber. |
+| `mid` | `XxnrQwyLKXk=` | Viber member id. |
+| `nickname` | `Alex` | Public display name on the profile. |
+| `last_online_time` | `2026-08-10 18:44:32` | The most recent online time observed. |
+| `active_days` | `0` | Days since that activity — smaller is more recent. |
+| `avatar` | `https://viber.waavatar.xyz/v/example.jpg` | Avatar URL. |
+| `avatar_type` | `Single Person` | What the avatar picture appears to contain, e.g. a single person. |
+| `person_count` | `1` | How many people were detected in the avatar. |
+| `gender` | `Male` | Gender estimated from the avatar. |
+| `age` | `37` | Age band estimated from the avatar. |
+| `skin_color` | `white` | Skin tone estimated from the avatar. |
 
 The result is a **point-in-time signal**, not a verdict, and not identity data. It describes what the provider reported at the moment the task ran.
 
