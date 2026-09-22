@@ -1,0 +1,112 @@
+{
+  "name": "Viber Bulk Number Profile",
+  "brand": "AvatarLookup",
+  "repository": "avatarlookup/viber-bulk-profile-api",
+  "description": "Upload numbers and download the Viber profile data, avatar included.",
+  "official_site": "https://avatarlookup.com",
+  "landing_page": "https://avatarlookup.com/products/viber_profile_batch",
+  "canonical_docs": "https://avatarlookup.com/api-docs",
+  "base_url": "https://avatarlookup.com",
+  "auth": {
+    "type": "api_key",
+    "header": "X-API-Key"
+  },
+  "mode": "async-bulk",
+  "product": "viber_profile_batch",
+  "identifier_kind": "phone",
+  "requires_country": true,
+  "endpoints": {
+    "submit": {
+      "method": "POST",
+      "path": "/api/v1/bulk-tasks"
+    },
+    "status": {
+      "method": "GET",
+      "path": "/api/v1/bulk-tasks/{id}"
+    },
+    "balance": {
+      "method": "GET",
+      "path": "/api/v1/balance"
+    }
+  },
+  "limits": {
+    "min_items": 1000,
+    "max_items": 100000,
+    "poll_interval_seconds": 30,
+    "file_formats": [
+      "txt",
+      "csv"
+    ]
+  },
+  "result_fields": [
+    {
+      "name": "number",
+      "example": "17253100591",
+      "description": ""
+    },
+    {
+      "name": "activated",
+      "example": "yes",
+      "description": ""
+    },
+    {
+      "name": "mid",
+      "example": "XxnrQwyLKXk=",
+      "description": ""
+    },
+    {
+      "name": "nickname",
+      "example": "Alex",
+      "description": ""
+    },
+    {
+      "name": "last_online_time",
+      "example": "2026-08-10 18:44:32",
+      "description": ""
+    },
+    {
+      "name": "active_days",
+      "example": "0",
+      "description": ""
+    },
+    {
+      "name": "avatar",
+      "example": "https://viber.waavatar.xyz/v/example.jpg",
+      "description": ""
+    },
+    {
+      "name": "avatar_type",
+      "example": "Single Person",
+      "description": ""
+    },
+    {
+      "name": "person_count",
+      "example": "1",
+      "description": ""
+    },
+    {
+      "name": "gender",
+      "example": "Male",
+      "description": ""
+    },
+    {
+      "name": "age",
+      "example": "37",
+      "description": ""
+    },
+    {
+      "name": "skin_color",
+      "example": "white",
+      "description": ""
+    }
+  ],
+  "statuses": [
+    "processing",
+    "success",
+    "failed"
+  ],
+  "pricing_url": "https://avatarlookup.com/pricing",
+  "maintainer": "AvatarLookup",
+  "license": "MIT",
+  "last_reviewed": "2026-09-22"
+}
