@@ -1,5 +1,5 @@
 {
-  "name": "Viber Bulk Number Profile",
+  "name": "Viber bulk number profile",
   "brand": "AvatarLookup",
   "repository": "avatarlookup/viber-bulk-profile-api",
   "description": "Upload numbers and download the Viber profile data, avatar included.",
@@ -31,7 +31,7 @@
   },
   "limits": {
     "min_items": 1000,
-    "max_items": 100000,
+    "max_items": 500000,
     "poll_interval_seconds": 30,
     "file_formats": [
       "txt",
@@ -40,64 +40,49 @@
   },
   "result_fields": [
     {
-      "name": "number",
-      "example": "17253100591",
-      "description": "The submitted number, exactly as it appeared in your file."
+      "name": "identifier",
+      "example": "12345678900",
+      "description": "Submitted identifier, used to join the result to the input. Phone identifiers include their country code."
     },
     {
       "name": "activated",
-      "example": "yes",
-      "description": "Whether the number is registered on Viber."
+      "example": "true",
+      "description": "The determined positive/negative signal for this product; interpret it in the product context."
     },
     {
-      "name": "mid",
-      "example": "XxnrQwyLKXk=",
-      "description": "Viber member id."
+      "name": "uid",
+      "example": "A5qCVDb3jPU=",
+      "description": "Platform user ID when available."
     },
     {
-      "name": "nickname",
-      "example": "Alex",
-      "description": "Public display name on the profile."
+      "name": "activedays",
+      "example": "3",
+      "description": "Activity recency in days when available; not a precise last-seen timestamp or a guarantee of current online status."
     },
     {
-      "name": "last_online_time",
-      "example": "2026-08-10 18:44:32",
-      "description": "The most recent online time observed."
-    },
-    {
-      "name": "active_days",
-      "example": "0",
-      "description": "Days since that activity — smaller is more recent."
-    },
-    {
-      "name": "avatar",
+      "name": "avatar_url",
       "example": "https://viber.waavatar.xyz/v/example.jpg",
-      "description": "Avatar URL."
+      "description": "Public avatar URL when available; an empty value does not reveal a private image."
     },
     {
-      "name": "avatar_type",
-      "example": "Single Person",
-      "description": "What the avatar picture appears to contain, e.g. a single person."
-    },
-    {
-      "name": "person_count",
-      "example": "1",
-      "description": "How many people were detected in the avatar."
-    },
-    {
-      "name": "gender",
-      "example": "Male",
-      "description": "Gender estimated from the avatar."
+      "name": "category",
+      "example": "individual portrait",
+      "description": "Image category estimated from the avatar."
     },
     {
       "name": "age",
-      "example": "37",
-      "description": "Age band estimated from the avatar."
+      "example": "31",
+      "description": "Age estimated from the avatar, not a verified personal fact."
+    },
+    {
+      "name": "gender",
+      "example": "male",
+      "description": "Gender presentation estimated from the avatar."
     },
     {
       "name": "skin_color",
       "example": "white",
-      "description": "Skin tone estimated from the avatar."
+      "description": "Skin-tone estimate derived from the avatar."
     }
   ],
   "statuses": [
@@ -108,5 +93,5 @@
   "pricing_url": "https://avatarlookup.com/pricing",
   "maintainer": "AvatarLookup",
   "license": "MIT",
-  "last_reviewed": "2026-09-22"
+  "last_reviewed": "2026-10-30"
 }
