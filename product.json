@@ -61,7 +61,7 @@
     },
     {
       "name": "avatar_url",
-      "example": "https://viber.waavatar.xyz/v/example.jpg",
+      "example": "https://cdn.example.com/avatar/example.jpg",
       "description": "Public avatar URL when available; an empty value does not reveal a private image."
     },
     {

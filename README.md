@@ -58,7 +58,7 @@ The current brand-side export uses these columns, in this order. Preserve their 
 | `activated` | `true` | The determined positive/negative signal for this product; interpret it in the product context. |
 | `uid` | `A5qCVDb3jPU=` | Platform user ID when available. |
 | `activedays` | `3` | Activity recency in days when available; not a precise last-seen timestamp or a guarantee of current online status. |
-| `avatar_url` | `https://viber.waavatar.xyz/v/example.jpg` | Public avatar URL when available; an empty value does not reveal a private image. |
+| `avatar_url` | `https://cdn.example.com/avatar/example.jpg` | Public avatar URL when available; an empty value does not reveal a private image. |
 | `category` | `individual portrait` | Image category estimated from the avatar. |
 | `age` | `31` | Age estimated from the avatar, not a verified personal fact. |
 | `gender` | `male` | Gender presentation estimated from the avatar. |
